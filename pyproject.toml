@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "django-homework"
+version = "0.1.0"
+description = ""
+authors = ["Kasaev Alexei <kasaev_97@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.lint.dependencies]
+mypy = "^1.8.0"
+black = "^24.1.1"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+
+
+[tool.poetry.group.black.dependencies]
+mypy = "^1.8.0"
+
+
+[tool.poetry.group.isort.dependencies]
+mypy = "^1.8.0"
+
+
+[tool.poetry.group.flake8.dependencies]
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
